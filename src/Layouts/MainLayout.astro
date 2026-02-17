@@ -1,0 +1,22 @@
+---
+import "../styles/global.css";
+import NavBar from "../Components/NavBar.astro";
+import Footer from "../Components/Footer.astro";
+const active = Astro.url.pathname;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="min-h-dvh bg-black flex flex-col">
+		<NavBar active={active} />
+    <slot />
+    <Footer/>
+	</body>
+</html>

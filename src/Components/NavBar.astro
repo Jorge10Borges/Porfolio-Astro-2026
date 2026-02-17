@@ -1,0 +1,130 @@
+
+---
+const { active = '/' } = Astro.props;
+---
+<!-- navbar goes here -->
+<nav class="bg-[#A2252D]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+
+      <div class="">
+        <!-- logo -->
+          <a href="/" class="flex items-center py-2 px-2 text-white hover:text-gray-300 gap-2">
+
+            <div class="bg-white rounded py-2 px-1">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="43px" height="28px" viewBox="0 0 1133.86 731.926" enable-background="new 0 0 1133.86 731.926"
+                xml:space="preserve">
+              <g>
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M399.393,731.838c68.753-68.066,88.124-148.108,83.502-236.715
+                    c-1.761-33.748-0.29-67.662-0.286-101.504c0.003-44.64-0.78-89.305,0.64-133.898c0.307-9.721,6.027-22.182,13.446-28.3
+                    c51.443-42.431,103.994-83.519,159.021-127.289c0.738,7.515,1.46,11.424,1.464,15.326c0.039,116.64,0.689,233.285-0.186,349.918
+                    c-1.031,137.066-107.045,250.511-243.762,262.429C410.41,732.055,407.547,731.838,399.393,731.838z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#A2252D" d="M417.104,0c78.302,0,156.603,0,241.663,0
+                    c-68.106,62.347-132.214,121.027-196.32,179.71c-1.218-0.563-2.434-1.125-3.651-1.691c10.197-32.925,19.275-66.263,31.045-98.619
+                    c6.187-17.013,2.669-25.925-12.624-34.761c-21.504-12.422-41.583-27.316-62.268-41.152C415.666,2.324,416.385,1.163,417.104,0z"/>
+                </g>
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#222222" d="M1023.057,365.442c-69.98-27.26-136.628-53.228-203.285-79.178
+                    c-16.054-6.25-32.322-12.011-48.06-18.974c-3.561-1.575-7.485-7.176-7.564-10.999c-0.614-30.495-0.341-61.009-0.341-93.249
+                    c24.342,10.402,47.806,20.321,71.185,30.437c95.278,41.229,190.462,82.67,285.897,123.538c9.197,3.94,12.502,8.479,12.202,18.438
+                    c-0.741,24.748-0.242,49.534-0.242,74.167c-122.962,53.532-245.191,106.749-369.023,160.667c0-33.129-0.304-64.756,0.437-96.362
+                    c0.08-3.431,5.576-8.257,9.59-9.851c76.751-30.507,153.666-60.611,230.537-90.828
+                    C1009.789,371.127,1015.101,368.776,1023.057,365.442z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#222222" d="M0.751,409.859c0-29.269,0-58.426,0-88.398
+                    C122.418,268.8,244.217,216.085,368.624,162.238c0,5.842,0.006,9.923,0,14.003c-0.034,25.229-0.475,50.467,0.1,75.682
+                    c0.223,9.775-2.57,14.75-12.261,18.401c-78.49,29.561-156.738,59.761-235.049,89.79c-2.813,1.078-5.533,2.396-10.843,4.712
+                    c19.633,7.871,37.033,14.915,54.483,21.832c64.826,25.701,129.692,51.296,194.436,77.201c3.496,1.401,8.525,5.231,8.578,8.014
+                    c0.608,31.73,0.387,63.482,0.387,97.817C244.435,515.781,122.744,462.887,0.751,409.859z"/>
+                </g>
+              </g>
+              </svg>
+            </div>
+            <div>
+              <div>
+                <span class="font-bold text-lg">JORGE<span class="font-light">BORGES</span></span>
+              </div>
+              <div class="text-sm">Desarrollador de Software</div>
+            </div>
+            
+          </a>
+      </div>
+
+      <!-- secondary nav -->
+      <div class="hidden md:flex items-center space-x-1">
+        <div class="relative h-full flex items-center">
+          <a href="/" class={active === '/' ? 'py-5 px-3 activo' : 'py-5 px-3 text-white/70 hover:text-white'}>Inicio</a>
+          <div class="left-0 bottom-4 absolute bar"></div>
+        </div>
+        <div class="relative h-full flex items-center">
+          <a href="/sobre-mi" class={active === '/sobre-mi' ? 'py-5 px-3 activo' : 'py-5 px-3 text-white/70 hover:text-white'}>Sobre Mi</a>
+          <div class="left-0 bottom-4 absolute bar"></div>
+        </div>
+        <div class="relative h-full flex items-center">
+          <a href="/proyectos" class={active === '/proyectos' ? 'py-5 px-3 activo' : 'py-5 px-3 text-white/70 hover:text-white'}>Proyectos</a>
+          <div class="left-0 bottom-4 absolute bar"></div>
+        </div>
+        <div class="relative h-full flex items-center">
+          <a href="/contacto" class={active === '/contacto' ? 'py-5 px-3 activo' : 'py-5 px-3 text-white/70 hover:text-white'}>Contacto</a>
+          <div class="left-0 bottom-4 absolute bar"></div>
+        </div>
+      </div>
+
+      <!-- mobile button goes here -->
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button">
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu hidden md:hidden">
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
+    <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a>
+  </div>
+</nav>
+
+<style>
+  /* Barra centrada que crece desde el medio hacia afuera */
+  .bar {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem; /* coincide con bottom-4 */
+    width: 60%;
+    height: 2px;
+    background: white;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.45s cubic-bezier(.2,.8,.2,1);
+  }
+
+  /* Al pasar el ratón o al enfocarse, crecer desde el centro */
+  .relative:hover .bar,
+  .relative:focus-within .bar {
+    transform: translateX(-50%) scaleX(1);
+    
+  }
+
+  /* Clase reutilizable para el link activo del nav */
+  .activo {
+    color: white;
+  }
+</style>
+
+<script>
+  // grab everything we need
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+  // add event listeners
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+

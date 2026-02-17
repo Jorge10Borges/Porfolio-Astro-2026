@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --enfasis: #A2252D;
+  --enfasis-hover: #912229;
+  --negro-background: #000000;
+  --gris-background: #212223;
+  --gris-texto: #f8f8f8;
+
+}
+
