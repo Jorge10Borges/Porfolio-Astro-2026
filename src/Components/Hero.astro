@@ -1,0 +1,122 @@
+---
+// Componente de la sección principal (Hero)
+---
+
+<section id="inicio" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 px-6 mt-10">
+  {/* Elementos Decorativos de Fondo (Electric Blueprint) */}
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-600/10 blur-[120px] rounded-full animate-pulse" style="animation-delay: 2s;"></div>
+    
+    {/* Grid sutil de fondo */}
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    
+    {/* Contenido de Texto */}
+    <div class="text-left space-y-8">
+      
+      {/* Badges de Especialidad */}
+      <div class="flex flex-wrap gap-3 animate-fade-in-up">
+        <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-[10px] font-bold tracking-[2px] text-blue-400 uppercase">Arquitectura</span>
+        <span class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-[10px] font-bold tracking-[2px] text-emerald-400 uppercase">Estrategia</span>
+        <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 rounded-full text-[10px] font-bold tracking-[2px] text-purple-400 uppercase">Modernización</span>
+      </div>
+
+      {/* Título Principal */}
+      <div class="space-y-4 animate-fade-in-up" style="animation-delay: 0.2s;">
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] text-white">
+          Soluciones de Software que <br />
+          <span class="text-gradient">Transforman Negocios</span>
+        </h1>
+        
+        <p class="text-white/50 text-lg md:text-xl max-w-xl leading-relaxed">
+          Más de dos décadas diseñando arquitecturas resilientes y liderando la evolución tecnológica de empresas críticas.
+        </p>
+      </div>
+
+      {/* Acciones */}
+      <div class="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+        <a href="https://wa.me/584246334377" target="_blank" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-2xl font-bold transition-all shadow-xl shadow-blue-500/20 flex items-center justify-center gap-2 group">
+          Iniciar Consultoría
+          <span class="material-symbols-rounded group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+        <a href="#proyectos" class="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-2xl font-bold transition-all flex items-center justify-center">
+          Ver Proyectos
+        </a>
+      </div>
+    </div>
+
+    {/* Elemento Visual / Stats */}
+    <div class="relative flex justify-center lg:justify-end animate-fade-in" style="animation-delay: 0.6s;">
+      <div class="relative w-full max-w-md aspect-square flex items-center justify-center">
+        {/* Círculos concéntricos decorativos */}
+        <div class="absolute inset-0 border border-white/5 rounded-full animate-spin-slow"></div>
+        <div class="absolute inset-8 border border-white/10 rounded-full animate-spin-reverse-slow"></div>
+        
+        {/* Caja Central de Experiencia */}
+        <div class="glass-card p-10 rounded-[40px] text-center space-y-2 border-white/10 shadow-2xl relative z-10">
+          <div class="text-7xl font-black text-gradient">+25</div>
+          <div class="text-xs uppercase tracking-[4px] font-bold text-white/40">Años de</div>
+          <div class="text-xl font-bold text-white">Trayectoria Real</div>
+          <div class="pt-6 grid grid-cols-2 gap-4 border-t border-white/5 mt-6">
+            <div class="text-left">
+              <div class="text-blue-400 font-bold text-lg">100%</div>
+              <div class="text-[9px] text-white/30 uppercase tracking-widest text-left">Compromiso</div>
+            </div>
+            <div class="text-left border-l border-white/5 pl-4">
+              <div class="text-emerald-400 font-bold text-lg">Global</div>
+              <div class="text-[9px] text-white/30 uppercase tracking-widest text-left">Alcance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .text-gradient {
+    /* Define los colores del degradado */
+    background: linear-gradient(135deg, #3B82F6 0%, #10B981 100%);
+    /* Recorta el fondo para que solo se vea a través del texto */
+    -webkit-background-clip: text;
+    /* Hace que el color original del texto sea transparente */
+    -webkit-text-fill-color: transparent;
+  }
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  .animate-spin-reverse-slow {
+    animation: spin-reverse 25s linear infinite;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes spin-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+  }
+  .animate-fade-in {
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>

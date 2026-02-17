@@ -1,11 +1,12 @@
 ---
-import NavBar from '../Components/NavBar.astro';
+import MainLayout from "../Layouts/MainLayout.astro"
+import NavBar from "../Components/NavBar.astro";
 const active = Astro.url.pathname;
 ---
-
-<NavBar active={active} />
-
-<main class="max-w-4xl mx-auto p-8">
-  <h1 class="text-3xl font-bold mb-4">Sobre mí</h1>
-  <p class="text-gray-200">Aquí puedes escribir una breve biografía, experiencia y tecnologías que dominas.</p>
-</main>
+<MainLayout>
+	<NavBar active={active} />
+  <main class="max-w-4xl mx-auto p-8 flex-1">
+    <h1 class="text-3xl font-bold mb-4 text-gray-200">Sobre mí</h1>
+    <p class="text-gray-200">Aquí puedes escribir una breve biografía, experiencia y tecnologías que dominas.</p>
+  </main>
+</MainLayout>

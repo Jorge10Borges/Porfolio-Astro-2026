@@ -1,10 +1,15 @@
 ---
 import MainLayout from "../Layouts/MainLayout.astro"
+import Hero from "../Components/Hero.astro";
+import Consultoria from "../Components/Consultoria.astro";
+import Proyectos from "../Components/Proyectos.astro";
+import SobreMi from "../Components/Sobre-Mi.astro";
+const active = Astro.url.pathname;
 ---
-<MainLayout>
-	<main class="flex-1">
-		<h1 class="text-3xl font-bold underline">
-			Hello world!
-		</h1>
-	</main>
+
+<MainLayout title="Mi Portafolio" description="Explora mis proyectos, experiencia y habilidades en desarrollo web.">
+		<Hero />
+		<Consultoria />
+		<Proyectos />
+		<SobreMi />
 </MainLayout>

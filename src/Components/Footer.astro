@@ -1,7 +1,73 @@
 ---
-
+// Enlaces de navegación para facilitar el mantenimiento
+// Accept `navLinks` as a prop; provide sensible default links
+const { navLinks } = Astro.props;
 ---
 
-<footer class="bg-neutral-800 text-neutral-500 text-center p-4">
-  Footer
+<!-- Pie de página Corporativo -->
+<footer class="py-16 px-6 border-t border-white/5 bg-[#080B14]">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+      <div class="text-center md:text-left">
+        <div class="font-bold text-xl mb-2 text-white">Jorge Borges</div>
+        <p class="text-white/40 text-sm max-w-sm">
+          Estrategia y arquitectura de software con 25 años de experiencia.
+          Especialista en modernización crítica y soluciones de alto impacto.
+        </p>
+      </div>
+
+      <div class="flex gap-10">
+        <div class="flex flex-col gap-3">
+          <p
+            class="font-bold text-[10px] uppercase tracking-[3px] text-blue-500 text-left"
+          >
+            Enlaces
+          </p>
+          {
+            navLinks.map((link) => (
+              <a
+                href={link.href}
+                class="text-white/30 hover:text-white transition-colors text-sm text-left"
+              >
+                {link.name}
+              </a>
+            ))
+          }
+        </div>
+        <div class="flex flex-col gap-3">
+          <p
+            class="font-bold text-[10px] uppercase tracking-[3px] text-blue-500 text-left"
+          >
+            Social
+          </p>
+          <a
+            href="https://github.com/Jorge10Borges"
+            target="_blank"
+            class="text-white/30 hover:text-white transition-colors text-sm text-left"
+            >GitHub</a
+          >
+          <a
+            href="#"
+            class="text-white/30 hover:text-white transition-colors text-sm text-left"
+            >LinkedIn</a
+          >
+          <a
+            href="https://wa.me/584246334377"
+            target="_blank"
+            class="text-white/30 hover:text-white transition-colors text-sm text-left"
+            >WhatsApp</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/20 uppercase tracking-[3px] text-center"
+    >
+      <p>© 2026 Jorge Borges — Todos los derechos reservados</p>
+      <p class="flex items-center gap-1">
+        Hecho con <span class="text-blue-500">✦</span> Astro & Tailwind
+      </p>
+    </div>
+  </div>
 </footer>
