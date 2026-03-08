@@ -1,13 +1,150 @@
 ---
-import MainLayout from "../Layouts/MainLayout.astro"
-import NavBar from "../Components/NavBar.astro";
+import MainLayout from "../Layouts/MainLayout.astro";
 const active = Astro.url.pathname;
 ---
-<MainLayout>
-	<NavBar active={active} />
 
-	<main class="max-w-4xl mx-auto p-8 flex-1">
-    <h1 class="text-3xl font-bold mb-4 text-gray-200">Contacto</h1>
-    <p class="text-gray-200">Formulario o correo de contacto.</p>
-	</main>
+<MainLayout
+  title="Contacto"
+  description="Ponte en contacto conmigo para discutir tu próximo proyecto o colaboración."
+>
+
+  <!-- Contenido Principal -->
+  <main class="pt-40 pb-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h1
+          class="text-5xl md:text-6xl font-black mb-4 tracking-tighter text-white"
+        >
+          Hablemos de tu <span class="text-gradient">próximo proyecto</span>
+        </h1>
+        <p class="text-white/50 text-lg">
+          ¿Tienes una idea o un sistema que necesita modernizarse? Estoy listo
+          para ayudar.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Columna Izquierda: Información -->
+        <div class="lg:col-span-5 space-y-8">
+          <div class="glass-card p-8 rounded-4xl">
+            <div class="contact-icon">
+              <span class="material-symbols-rounded">mail</span>
+            </div>
+            <h3 class="text-white font-bold text-lg">Correo Electrónico</h3>
+            <p class="text-white/50 text-sm mb-4">
+              Escríbeme para propuestas detalladas.
+            </p>
+            <a
+              href="mailto:jorge@appjorge.com"
+              class="text-blue-400 font-semibold hover:underline"
+              >jorge@appjorge.com</a
+            >
+          </div>
+
+          <div class="glass-card p-8 rounded-4xl">
+            <div class="contact-icon">
+              <span class="material-symbols-rounded">chat</span>
+            </div>
+            <h3 class="text-white font-bold text-lg">WhatsApp Directo</h3>
+            <p class="text-white/50 text-sm mb-4">
+              Respuesta rápida para consultas inmediatas.
+            </p>
+            <a
+              href="https://wa.me/584246334377"
+              class="text-emerald-400 font-semibold hover:underline"
+              >+58 424 6334377</a
+            >
+          </div>
+
+          <div class="glass-card p-8 rounded-4xl">
+            <div class="contact-icon">
+              <span class="material-symbols-rounded">public</span>
+            </div>
+            <h3 class="text-white font-bold text-lg">Redes Profesionales</h3>
+            <div class="flex gap-4 mt-4">
+              <a
+                href="https://github.com/Jorge10Borges"
+                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  class="w-5 h-5 invert"
+                  alt="Github"
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  class="w-5 h-5"
+                  alt="LinkedIn"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-10 rounded-[40px] border-blue-500/20">
+            <form action="#" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label class="text-xs font-bold text-white/40 uppercase ml-1"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Ej. Juan Pérez"
+                    class="input-field"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-xs font-bold text-white/40 uppercase ml-1"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    type="email"
+                    placeholder="tu@email.com"
+                    class="input-field"
+                  />
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-white/40 uppercase ml-1"
+                  >Asunto</label
+                >
+                <input
+                  type="text"
+                  placeholder="¿En qué puedo ayudarte?"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-white/40 uppercase ml-1"
+                  >Mensaje</label
+                >
+                <textarea
+                  rows="5"
+                  placeholder="Cuéntame sobre tu proyecto o consulta..."
+                  class="input-field resize-none"></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2"
+              >
+                <span>Enviar Mensaje</span>
+                <span class="material-symbols-rounded text-sm">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </MainLayout>

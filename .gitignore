@@ -22,3 +22,20 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Astro / build
+.cache/
+.output/
+
+# editor / IDE
+.vscode/
+
+# lockfiles
+package-lock.json
+pnpm-lock.yaml
+
+# local env
+*.local
+
+# public assets build
+public/assets/

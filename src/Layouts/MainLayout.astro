@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Footer from "../Components/Footer.astro";
 import NavBar from "../Components/NavBar.astro";
+import Whatsapp from "../Components/Whatsapp-Icon.astro";
 
 export interface Props {
 	title: string;
@@ -12,10 +13,10 @@ const { title, description } = Astro.props;
 
 // Navigation links for easier maintenance
 const navLinks = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Consultoría', href: '#consultoria' },
-    { name: 'Proyectos', href: '#proyectos' },
-    { name: 'Trayectoria', href: '#sobre-mi' },
+    { name: 'Inicio', href: '/#inicio' },
+    { name: 'Consultoría', href: '/#consultoria' },
+    { name: 'Proyectos', href: '/#proyectos' },
+    { name: 'Trayectoria', href: '/#sobre-mi' },
 ];
 ---
 
@@ -36,5 +37,6 @@ const navLinks = [
     <NavBar navLinks={navLinks} />
     <slot />
     <Footer navLinks={navLinks} />
+    <Whatsapp />
   </body>
 </html>

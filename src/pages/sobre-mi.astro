@@ -1,12 +1,162 @@
 ---
 import MainLayout from "../Layouts/MainLayout.astro"
-import NavBar from "../Components/NavBar.astro";
 const active = Astro.url.pathname;
 ---
-<MainLayout>
-	<NavBar active={active} />
-  <main class="max-w-4xl mx-auto p-8 flex-1">
-    <h1 class="text-3xl font-bold mb-4 text-gray-200">Sobre mí</h1>
-    <p class="text-gray-200">Aquí puedes escribir una breve biografía, experiencia y tecnologías que dominas.</p>
-  </main>
-</MainLayout>
+
+<MainLayout title="Sobre Mí" description="Explora mis proyectos, experiencia y habilidades en desarrollo web.">
+  <!-- Hero Section -->
+  <header id="inicio" class="pt-56 pb-32 px-6 relative">
+      <div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+          <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 px-4 py-2 rounded-full mb-10 text-blue-400 text-[10px] font-bold uppercase tracking-[3px]">
+              <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              </span>
+              Desde 1999 Evolucionando
+          </div>
+          
+          <h1 class="text-6xl md:text-8xl font-black mb-10 leading-[1.1] tracking-tighter text-white">
+              Arquitectura de software <br>
+              <span class="text-gradient">con propósito.</span>
+          </h1>
+          
+          <p class="text-white/50 text-lg md:text-xl max-w-3xl mb-14 leading-relaxed">
+              Desarrollador Full Stack con más de 25 años de experiencia. Mi carrera comenzó en los 90 con VB 5.0 y he evolucionado junto con la tecnología hasta las arquitecturas modernas de hoy.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-5">
+              <a href="#sobre-mi" class="bg-white text-black px-12 py-4 rounded-2xl font-bold hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] transition-all flex items-center justify-center">
+                  Mi Historia
+              </a>
+              <a href="#" class="glass-card px-12 py-4 rounded-2xl font-bold hover:bg-white/5 transition-all flex items-center justify-center gap-2">
+                  <span class="material-symbols-rounded">download</span> Descargar CV
+              </a>
+          </div>
+      </div>
+  </header>
+
+    <!-- Sección Sobre Mí: Historia -->
+    <section id="sobre-mi" class="py-32 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Columna Izquierda: Introducción y Educación -->
+                <div class="lg:col-span-5 text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
+                        Más de dos décadas <br>
+                        <span class="text-blue-500">creando soluciones.</span>
+                    </h2>
+                    
+                    <div class="glass-card p-8 rounded-4xl border-blue-500/20 mb-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                                <span class="material-symbols-rounded text-white">school</span>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-bold">Educación Superior</h3>
+                                <p class="text-blue-400 text-xs font-bold uppercase tracking-widest">Cum Laude</p>
+                            </div>
+                        </div>
+                        <p class="text-white/60 text-sm leading-relaxed mb-4">
+                            <strong>Licenciatura en Administración, mención Informática</strong><br>
+                            Universidad Simón Rodríguez – Venezuela (2025).
+                        </p>
+                        <p class="text-white/40 text-[11px] leading-relaxed">
+                            Formación enfocada en la intersección de la gestión empresarial y el desarrollo tecnológico de alto impacto.
+                        </p>
+                    </div>
+
+                    <div class="flex gap-10 border-t border-white/5 pt-10">
+                        <div>
+                            <p class="text-4xl font-black text-white">25+</p>
+                            <p class="text-[10px] text-white/30 uppercase tracking-widest mt-1">Años de Exp</p>
+                        </div>
+                        <div>
+                            <p class="text-4xl font-black text-white">3</p>
+                            <p class="text-[10px] text-white/30 uppercase tracking-widest mt-1">Países</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Timeline de Historia -->
+                <div class="lg:col-span-7 text-left">
+                    <div class="pl-8 border-l border-white/10 space-y-12 relative">
+                        <!-- Item 1: Inicios -->
+                        <div class="relative timeline-item">
+                            <span class="text-blue-500 font-bold text-sm mb-2 block">1999 — Los Inicios</span>
+                            <h4 class="text-xl font-bold text-white mb-3">IDEA (Universidad Simón Bolívar)</h4>
+                            <p class="text-white/50 text-sm leading-relaxed">
+                                Comencé mi trayectoria en Venezuela como digitalizador de mapas para el sistema ferroviario nacional, dominando herramientas críticas como ArcInfo y MapInfo.
+                            </p>
+                        </div>
+
+                        <!-- Item 2: Innovación Educativa y Lotería -->
+                        <div class="relative timeline-item">
+                            <span class="text-blue-500 font-bold text-sm mb-2 block">2000s — CyberTrain</span>
+                            <h4 class="text-xl font-bold text-white mb-3">Software Educativo e Innovación</h4>
+                            <p class="text-white/50 text-sm leading-relaxed">
+                                Desarrollé <strong>CyberMedia</strong> para PDVSA, un software pionero de video sincronizado. En esta etapa creé <strong>Lottery 95 y 2000</strong> con VB 5.0/6.0, implementando la venta de lotería bajo Windows con transmisión vía módem.
+                            </p>
+                        </div>
+
+                        <!-- Item 3: Expansión Regional -->
+                        <div class="relative timeline-item">
+                            <span class="text-blue-500 font-bold text-sm mb-2 block">Colombia & Sistemas ERP</span>
+                            <h4 class="text-xl font-bold text-white mb-3">JBCont & JTInventory</h4>
+                            <p class="text-white/50 text-sm leading-relaxed">
+                                En Colombia, diseñé soluciones de facturación e inventario de gran escala. <strong>JBCont</strong> gestionó más de 16,000 artículos, integrando software empresarial con hardware periférico.
+                            </p>
+                        </div>
+
+                        <!-- Item 4: Era Web Moderna -->
+                        <div class="relative timeline-item">
+                            <span class="text-blue-500 font-bold text-sm mb-2 block">Actualidad — Full Stack Web</span>
+                            <h4 class="text-xl font-bold text-white mb-3">Transformación Digital</h4>
+                            <p class="text-white/50 text-sm leading-relaxed">
+                                Evolución hacia plataformas modernas como <strong>TiendaLumi.com</strong> en Argentina y sitios institucionales como <strong>Sinatracibi.com</strong>, utilizando tecnologías de punta como Astro, React y Node.js.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section id="tecnologias" class="py-24 px-6 relative bg-white/2">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold text-white mb-4">Tecnologías y Habilidades</h2>
+                <p class="text-white/40 max-w-2xl mx-auto italic">Herramientas y lenguajes con los que tengo experiencia profesional desde VB5 hasta hoy.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="glass-card p-8 rounded-4xl text-left hover:border-blue-500/50">
+                    <span class="material-symbols-rounded text-blue-500 mb-4">terminal</span>
+                    <h5 class="text-white font-bold mb-2">Legacy & Core</h5>
+                    <p class="text-white/40 text-xs leading-relaxed">VB 5.0/6.0, VB.NET, C#. Experto en migración de sistemas heredados a entornos modernos.</p>
+                </div>
+                <!-- Skill 2 -->
+                <div class="glass-card p-8 rounded-4xl text-left hover:border-emerald-500/50">
+                    <span class="material-symbols-rounded text-emerald-500 mb-4">language</span>
+                    <h5 class="text-white font-bold mb-2">Web Full Stack</h5>
+                    <p class="text-white/40 text-xs leading-relaxed">PHP (Laravel), JavaScript (ES6+), Astro, React. Creación de interfaces rápidas y escalables.</p>
+                </div>
+                <!-- Skill 3 -->
+                <div class="glass-card p-8 rounded-4xl text-left hover:border-purple-500/50">
+                    <span class="material-symbols-rounded text-purple-500 mb-4">database</span>
+                    <h5 class="text-white font-bold mb-2">Bases de Datos</h5>
+                    <p class="text-white/40 text-xs leading-relaxed">MySQL, SQL Server, SQLite. Diseño y optimización de estructuras relacionales complejas.</p>
+                </div>
+                <!-- Skill 4 -->
+                <div class="glass-card p-8 rounded-4xl text-left hover:border-blue-400/50">
+                    <span class="material-symbols-rounded text-blue-400 mb-4">palette</span>
+                    <h5 class="text-white font-bold mb-2">Diseño UI/UX</h5>
+                    <p class="text-white/40 text-xs leading-relaxed">Tailwind CSS, Bootstrap, CSS Moderno. Enfoque en accesibilidad y responsividad total.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </MainLayout>
+
+

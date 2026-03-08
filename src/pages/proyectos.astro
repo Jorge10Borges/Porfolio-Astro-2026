@@ -1,15 +1,223 @@
 ---
-import MainLayout from "../Layouts/MainLayout.astro"
-import NavBar from "../Components/NavBar.astro";
+import MainLayout from "../Layouts/MainLayout.astro";
 const active = Astro.url.pathname;
 ---
-<MainLayout>
-	<NavBar active={active} />
 
-	<main class="max-w-4xl mx-auto p-8 flex-1">
-    <h1 class="text-3xl font-bold mb-4 text-gray-200">Proyectos</h1>
-    <p class="text-gray-200">Lista tus proyectos o agrega tarjetas con descripciones y enlaces.</p>
-	</main>
+<MainLayout
+  title="Proyectos"
+  description="Explora mis proyectos, experiencia y habilidades en desarrollo web."
+>
+  <!-- Header de Proyectos -->
+  <header class="pt-48 pb-16 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1
+        class="text-5xl md:text-7xl font-black mb-6 tracking-tighter text-white"
+      >
+        Proyectos <span class="text-gradient">Destacados</span>
+      </h1>
+      <p class="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
+        Desde sistemas comerciales en Visual Basic hasta plataformas web
+        modernas con Astro y React. 25 años de evolución constante.
+      </p>
+    </div>
+  </header>
+
+  <!-- Grid de Proyectos -->
+  <section class="pb-32 px-6">
+    <div
+      class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+    >
+      <!-- CyberMedia -->
+      <div class="glass-card rounded-4xl">
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800"
+            alt="CyberMedia"
+            class="project-image"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="badge">VB 5.0 / 6.0</span>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col grow">
+          <h3 class="text-xl font-bold text-white mb-3">CyberMedia</h3>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 grow">
+            Software educativo pionero para PDVSA. Reproducción de charlas con
+            video sincronizado y material de apoyo en CD-ROM.
+          </p>
+          <div
+            class="flex items-center justify-between mt-auto pt-6 border-t border-white/5"
+          >
+            <span
+              class="text-[10px] text-white/30 uppercase tracking-widest font-bold"
+              >Legacy Project</span
+            >
+            <span class="material-symbols-rounded text-blue-500 text-lg"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Lottery -->
+      <div class="glass-card rounded-4xl">
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1596838132731-dd9d5a39646c?q=80&w=800"
+            alt="Lottery"
+            class="project-image"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="badge">VB 5.0 / 6.0</span>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col grow">
+          <h3 class="text-xl font-bold text-white mb-3">Lottery 95 / 2000</h3>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 grow">
+            Sistema pionero de venta de lotería en entorno Windows con
+            transmisión vía módem. Un hito técnico en su época.
+          </p>
+          <div
+            class="flex items-center justify-between mt-auto pt-6 border-t border-white/5"
+          >
+            <span
+              class="text-[10px] text-white/30 uppercase tracking-widest font-bold"
+              >Modem Networking</span
+            >
+            <span class="material-symbols-rounded text-blue-500 text-lg"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- JBConta -->
+      <div class="glass-card rounded-4xl">
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=800"
+            alt="JBConta"
+            class="project-image"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="badge">VB.NET / MySQL</span>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col grow">
+          <h3 class="text-xl font-bold text-white mb-3">JBConta</h3>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 grow">
+            Sistema de facturación a gran escala para distribuidora de
+            papelería. Control de +16,000 artículos con escaneo láser.
+          </p>
+          <div
+            class="flex items-center justify-between mt-auto pt-6 border-t border-white/5"
+          >
+            <span
+              class="text-[10px] text-white/30 uppercase tracking-widest font-bold"
+              >Enterprise ERP</span
+            >
+            <span class="material-symbols-rounded text-blue-500 text-lg"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- AsisCont -->
+      <div class="glass-card rounded-4xl">
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1454165833767-131f72a60ce9?q=80&w=800"
+            alt="AsisCont"
+            class="project-image"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="badge">VB.NET / HTTP</span>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col grow">
+          <h3 class="text-xl font-bold text-white mb-3">AsisCont</h3>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 grow">
+            Control de inventario con conexión remota HTTP entre estados.
+            Innovación en sincronización de datos distribuida.
+          </p>
+          <div
+            class="flex items-center justify-between mt-auto pt-6 border-t border-white/5"
+          >
+            <span
+              class="text-[10px] text-white/30 uppercase tracking-widest font-bold"
+              >Remote Data</span
+            >
+            <span class="material-symbols-rounded text-blue-500 text-lg"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Tienda Lumi -->
+      <div class="glass-card rounded-4xl">
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=800"
+            alt="Tienda Lumi"
+            class="project-image"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="badge">PHP / JS / MySQL</span>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col grow">
+          <h3 class="text-xl font-bold text-white mb-3">TiendaLumi.com</h3>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 grow">
+            E-commerce completo para aromatizantes en Argentina. Optimización de
+            ventas y gestión de catálogo digital.
+          </p>
+          <div
+            class="flex items-center justify-between mt-auto pt-6 border-t border-white/5"
+          >
+            <span
+              class="text-[10px] text-white/30 uppercase tracking-widest font-bold"
+              >Live in Argentina</span
+            >
+            <span class="material-symbols-rounded text-blue-500 text-lg"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- JTInventory -->
+      <div class="glass-card rounded-4xl">
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1558981403-c5f91dbbe980?q=80&w=800"
+            alt="JTInventory"
+            class="project-image"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="badge">VB.NET / SQL</span>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col grow">
+          <h3 class="text-xl font-bold text-white mb-3">JTInventory</h3>
+          <p class="text-white/50 text-sm leading-relaxed mb-6 grow">
+            Control especializado para venta de repuestos de motocicletas en
+            Colombia. Gestión de stock crítico.
+          </p>
+          <div
+            class="flex items-center justify-between mt-auto pt-6 border-t border-white/5"
+          >
+            <span
+              class="text-[10px] text-white/30 uppercase tracking-widest font-bold"
+              >International Exp</span
+            >
+            <span class="material-symbols-rounded text-blue-500 text-lg"
+              >arrow_outward</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </MainLayout>
-
-
