@@ -1,7 +1,9 @@
 {
-  "name": "porfolio-astro-new",
+  "name": "qrvplus-site",
   "type": "module",
   "version": "0.0.1",
+  "description": "Sitio oficial de QRV+ — qrvplus.com",
+  "homepage": "https://qrvplus.com",
   "scripts": {
     "dev": "astro dev --host 192.168.1.200",
     "build": "astro build",

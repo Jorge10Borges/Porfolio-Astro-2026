@@ -1,43 +1,40 @@
-# Astro Starter Kit: Minimal
+# QRV+
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio oficial de QRV+ — https://qrvplus.com
+
+Este repositorio contiene la web estática del proyecto QRV+ (anteriormente "QR Salvavidas").
+
+## Comandos
+
+Ejecuta desde la raíz del proyecto:
+
+```bash
+npm install
+npm run dev      # Desarrollo local
+npm run build    # Generar build de producción
+npm run preview  # Previsualizar build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Despliegue
 
-## 🚀 Project Structure
+El sitio está preparado para desplegarse en GitHub Pages usando el archivo `CNAME` con el dominio `qrvplus.com`. También es compatible con despliegue en Vercel o Netlify.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+public/
+src/
+	Components/
+	Layouts/
+	pages/
+package.json
+README.md
+CNAME
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Notas
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Actualizar metadata, Open Graph y assets de marca cuando estén disponibles.
+- Revocar cualquier token compartido públicamente y asegurar integraciones externas.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Para más cambios, abre un issue o PR.
