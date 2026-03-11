@@ -1,0 +1,246 @@
+---
+import MainLayout from "../Layouts/MainLayout.astro";
+---
+
+<MainLayout
+  title="AsisCont | Case Study - Jorge Borges"
+  description="AsisCont — Control de inventario y sincronización en tiempo real para distribución mayorista."
+>
+  <div class="bg-glow"></div>
+
+  <main class="pt-48 pb-24 px-6 ">
+    <!-- Header / Mapa Conceptual -->
+    <header class="pt-12 pb-20 px-6 relative">
+      <div class="max-w-7xl mx-auto text-center">
+        <span
+          class="inline-block py-1 px-3 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-[10px] font-bold uppercase tracking-widest mb-6"
+          >Logística & Sincronización Cloud</span
+        >
+        <h1
+          class="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white"
+        >
+          Asis<span class="text-gradient">Cont</span>
+        </h1>
+        <p
+          class="text-white/60 text-xl leading-relaxed max-w-2xl mx-auto mb-16"
+        >
+          Conectando los Andes con el Orinoco: Control de inventario y ventas en
+          tiempo real para la distribución mayorista de hortalizas.
+        </p>
+
+        <!-- Visualización de la Red -->
+        <div
+          class="relative max-w-4xl mx-auto glass-card p-12 rounded-[40px] border-white/5"
+        >
+          <div class="path-line"></div>
+          <div class="flex justify-between items-center relative z-10">
+            <div class="text-left">
+              <div class="location-dot mb-4"></div>
+              <p class="font-bold text-white">Timotes, Mérida</p>
+              <p class="text-[10px] text-white/40 uppercase tracking-widest">
+                Centro de Acopio
+              </p>
+            </div>
+            <div
+              class="bg-[#0B0F1A] p-4 rounded-2xl border border-sky-500/30 shadow-2xl shadow-sky-500/10"
+            >
+              <span class="material-symbols-rounded text-sky-400 text-3xl"
+                >cloud_sync</span
+              >
+              <p class="text-[9px] font-bold mt-2 text-sky-300">
+                CLOUD DATABASE
+              </p>
+            </div>
+            <div class="text-right">
+              <div class="location-dot mb-4 ml-auto"></div>
+              <p class="font-bold text-white">Edo. Bolívar</p>
+              <p class="text-[10px] text-white/40 uppercase tracking-widest">
+                Mercado Municipal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- La Historia -->
+    <section class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 flex items-center gap-4 text-left">
+          <span class="w-12 h-px bg-sky-500"></span>
+          El Reto de la Distancia
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-12 text-white/70 leading-relaxed text-left"
+        >
+          <p>
+            La gestión de productos perecederos no admite retrasos. En este
+            proyecto, el desafío era coordinar la compra de hortalizas en el
+            estado Mérida con su venta al mayor en el estado Bolívar, a cientos
+            de kilómetros de distancia. Antes de AsisCont, la información
+            viajaba más lento que las gandolas.
+          </p>
+          <p>
+            La solución fue pionera para su entorno: un software basado en <strong
+              >VB.NET</strong
+            > que se comunicaba con una base de datos <strong
+              >MySQL en la nube</strong
+            >. Esto permitió que, en el mismo instante en que una gandola salía
+            de Timotes, la sede en Bolívar ya conocía el inventario exacto en
+            tránsito, permitiendo ventas anticipadas y una logística impecable.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Características -->
+    <section class="py-24 px-6 bg-white/2">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="glass-card p-10 rounded-4xl border-sky-500/10 text-left">
+            <div class="feature-icon mb-6">
+              <span class="material-symbols-rounded">update</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">
+              Stock en Tiempo Real
+            </h4>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Actualización instantánea entre sedes. Cada ingreso en el acopio
+              de Mérida se reflejaba automáticamente en los terminales de venta
+              en Bolívar.
+            </p>
+          </div>
+
+          <div class="glass-card p-10 rounded-4xl border-sky-500/10 text-left">
+            <div class="feature-icon mb-6">
+              <span class="material-symbols-rounded">cloud_done</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">
+              Base de Datos Híbrida
+            </h4>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Implementación de MySQL remoto con gestión de latencia, asegurando
+              que el sistema fuera usable incluso con conexiones de internet
+              inestables.
+            </p>
+          </div>
+
+          <div class="glass-card p-10 rounded-4xl border-sky-500/10 text-left">
+            <div class="feature-icon mb-6">
+              <span class="material-symbols-rounded">local_shipping</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">Gestión de Carga</h4>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Control específico de pesaje, merma de hortalizas y costos de
+              transporte, integrando toda la cadena de suministro en un solo
+              lugar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detalles Técnicos -->
+    <section class="py-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3
+          class="text-[10px] font-bold uppercase tracking-[0.4em] text-white/20 mb-10"
+        >
+          Infraestructura Tecnológica
+        </h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span
+            class="bg-white/5 px-6 py-2 rounded-full border border-white/10 text-xs font-mono"
+            >VB.NET Framework</span
+          >
+          <span
+            class="bg-white/5 px-6 py-2 rounded-full border border-white/10 text-xs font-mono"
+            >MySQL Remote Server</span
+          >
+          <span
+            class="bg-white/5 px-6 py-2 rounded-full border border-white/10 text-xs font-mono"
+            >Real-time Data Binding</span
+          >
+          <span
+            class="bg-white/5 px-6 py-2 rounded-full border border-white/10 text-xs font-mono"
+            >Encryption Layers</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 px-6">
+      <div
+        class="max-w-5xl mx-auto glass-card p-12 rounded-[48px] border-blue-500/20 text-center"
+      >
+        <h2 class="text-4xl font-bold mb-6">¿Interesado en AsisCont?</h2>
+        <p class="text-white/50 mb-10 max-w-2xl mx-auto">
+          Puedo ayudar con despliegue, integración y soporte. Contáctame para
+          evaluar tu caso.
+        </p>
+        <a
+          href="/contacto"
+          class="inline-flex bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold transition-all items-center gap-3"
+        >
+          Contactar
+          <span class="material-symbols-rounded">arrow_right_alt</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    .bg-glow { position:fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at 50% 50%, rgba(56,189,248,0.03) 0%, transparent 60%); pointer-events:none; z-index:-1; }
+    .glass-card {
+      background: rgba(22, 27, 34, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(56, 189, 248, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #38bdf8;
+    }
+    .path-line {
+      position: absolute;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+      width: 100%;
+      top: 50%;
+      z-index: -1;
+    }
+    .location-dot {
+      width: 12px;
+      height: 12px;
+      background: #38bdf8;
+      border-radius: 9999px;
+      box-shadow: 0 0 20px #38bdf8;
+      position: relative;
+    }
+    .location-dot::after {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border: 1px solid #38bdf8;
+      border-radius: 50%;
+      animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    @keyframes ping {
+      75%,
+      100% {
+        transform: scale(2.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</MainLayout>
