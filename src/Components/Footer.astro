@@ -1,4 +1,6 @@
 ---
+import Logo from "./Logo.astro";
+
 // Enlaces de navegación para facilitar el mantenimiento
 // Accept `navLinks` as a prop; provide sensible default links
 const { navLinks } = Astro.props;
@@ -67,7 +69,13 @@ const { navLinks } = Astro.props;
     <div
       class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-white/20 uppercase tracking-[3px] text-center"
     >
-      <p>© 2026 Jorge Borges — Todos los derechos reservados</p>
+      <div class="flex flex-row gap-4 items-center">
+        <!-- Identidad / Logo -->
+        <a href="/" class="flex items-center gap-3 group cursor-pointer">
+          <Logo size="40" class="group-hover:scale-105 transition-transform" title="DevJorge" />
+        </a>
+        <p>© 2026 Jorge Borges — Todos los derechos reservados</p>
+      </div>
       <p class="flex items-center gap-1">
         Hecho con <span class="text-blue-500">✦</span> Astro & Tailwind
       </p>
