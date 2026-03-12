@@ -1,0 +1,172 @@
+---
+import MainLayout from "../Layouts/MainLayout.astro";
+---
+
+<MainLayout title="JTInventory | Case Study - Jorge Borges" description="JTInventory — Control total de activos e inventario con sincronización y auditoría en tiempo real.">
+
+  <div class="bg-glow"></div>
+
+  <main class="pt-48 pb-24 px-6">
+    <!-- Header -->
+    <header class="pt-12 pb-20 px-6 inventory-grid">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="text-left">
+          <div class="inline-flex items-center gap-2 mb-6 px-3 py-1 rounded-full bg-amber-500/5 border border-amber-500/20">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+            </span>
+            <span class="text-[10px] font-bold text-amber-400 uppercase tracking-widest">Precisión Garantizada</span>
+          </div>
+
+          <h1 class="text-6xl md:text-7xl font-black mb-6 tracking-tighter text-white">
+            JT<span class="text-gradient">Inventory</span>
+          </h1>
+
+          <p class="text-white/50 text-xl leading-relaxed mb-8">
+            La inteligencia aplicada al control de stock. Un ecosistema diseñado para eliminar la incertidumbre, optimizar el flujo de caja y digitalizar la cadena de suministro.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <div class="glass-card px-6 py-4 rounded-2xl flex flex-col">
+              <span class="text-3xl font-black text-white">0%</span>
+              <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest mt-1">Margen de Error</span>
+            </div>
+            <div class="glass-card px-6 py-4 rounded-2xl flex flex-col">
+              <span class="text-3xl font-black text-white">RT</span>
+              <span class="text-[10px] text-white/30 uppercase font-bold tracking-widest mt-1">Real-Time Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Mockup -->
+        <div class="relative group">
+          <div class="glass-card p-6 rounded-4xl border-amber-500/20 shadow-2xl overflow-hidden">
+            <div class="scanner-line"></div>
+            <div class="bg-[#0F172A] rounded-3xl p-6 space-y-6">
+              <div class="flex justify-between items-center">
+                <h3 class="font-bold text-sm text-white/80">Monitor de Stock</h3>
+                <span class="material-symbols-rounded text-amber-500">inventory_2</span>
+              </div>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl border border-white/5">
+                  <div class="flex gap-3 items-center">
+                    <div class="w-8 h-8 bg-blue-500/20 rounded flex items-center justify-center text-blue-400">
+                      <span class="material-symbols-rounded text-sm">laptop_mac</span>
+                    </div>
+                    <span class="text-xs font-semibold">MacBook Pro M3</span>
+                  </div>
+                  <span class="status-pill text-emerald-500 bg-emerald-500/5">In Stock</span>
+                </div>
+                <div class="flex justify-between items-center p-3 bg-white/5 rounded-xl border border-white/5">
+                  <div class="flex gap-3 items-center">
+                    <div class="w-8 h-8 bg-amber-500/20 rounded flex items-center justify-center text-amber-400">
+                      <span class="material-symbols-rounded text-sm">monitor</span>
+                    </div>
+                    <span class="text-xs font-semibold">Studio Display</span>
+                  </div>
+                  <span class="status-pill text-amber-500 bg-amber-500/5">Low Stock</span>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="p-4 bg-amber-500/10 rounded-2xl border border-amber-500/10">
+                  <p class="text-[10px] text-amber-500 font-bold uppercase tracking-widest">Valor Total</p>
+                  <p class="text-xl font-black mt-1">$ 84.500</p>
+                </div>
+                <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
+                  <p class="text-[10px] text-white/40 font-bold uppercase tracking-widest">Auditoría</p>
+                  <p class="text-xl font-black mt-1">Ok</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Estrategia del Producto -->
+    <section class="py-24 px-6 relative overflow-hidden">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex items-center gap-6 mb-12">
+          <span class="w-16 h-px bg-amber-500/50"></span>
+          <h2 class="text-3xl font-bold text-left">Control Total del Activo</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-white/60 leading-relaxed text-left">
+          <p>
+            <strong>JTInventory</strong> nace como respuesta a la necesidad de las empresas de conocer exactamente qué tienen y dónde lo tienen. En un entorno comercial volátil, el inventario es capital inmovilizado; gestionarlo con precisión es la diferencia entre el crecimiento o la pérdida operativa.
+          </p>
+          <p>
+            El sistema no solo registra entradas y salidas, sino que analiza tendencias de consumo, alerta sobre stock crítico y genera reportes de auditoría infalibles. Desarrollado bajo estándares de alto rendimiento, garantiza que la información sea siempre la fuente única de verdad para la toma de decisiones gerenciales.
+          </p>
+        </div>
+        <div class="mt-8">
+          <p class="text-sm text-white/40 italic">
+            La aplicación se encuentra en funcionamiento; fue desarrollada desde Venezuela para la tienda de repuestos y taller en Colombia llamada "Almacén y Taller Sport Motos" NIT: 1122405510-3.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilares Técnicos -->
+    <section class="py-24 px-6 bg-white/2">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="glass-card p-10 rounded-4xl border-amber-500/5 hover:border-amber-500/30 transition-all text-left">
+            <div class="feature-icon mb-6">
+              <span class="material-symbols-rounded text-3xl">barcode_reader</span>
+            </div>
+            <h4 class="text-xl font-bold mb-4">Integración de Escaneo</h4>
+            <p class="text-sm text-white/40 leading-relaxed">Compatibilidad total con lectores de códigos de barras y QR, agilizando los procesos de picking y recepción de mercancía en un 70%.</p>
+          </div>
+
+          <div class="glass-card p-10 rounded-4xl border-amber-500/5 hover:border-amber-500/30 transition-all text-left">
+            <div class="feature-icon mb-6">
+              <span class="material-symbols-rounded text-3xl">history</span>
+            </div>
+            <h4 class="text-xl font-bold mb-4">Trazabilidad Histórica</h4>
+            <p class="text-sm text-white/40 leading-relaxed">Kardex automatizado por producto. Sepa quién, cuándo y por qué se movió cada unidad, eliminando fugas y discrepancias.</p>
+          </div>
+
+          <div class="glass-card p-10 rounded-4xl border-amber-500/5 hover:border-amber-500/30 transition-all text-left">
+            <div class="feature-icon mb-6">
+              <span class="material-symbols-rounded text-3xl">analytics</span>
+            </div>
+            <h4 class="text-xl font-bold mb-4">Inteligencia de Stock</h4>
+            <p class="text-sm text-white/40 leading-relaxed">Algoritmos de alerta de reabastecimiento basados en el historial de consumo, optimizando la inversión en compras.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack & Footer -->
+    <section class="py-24 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-[10px] font-bold uppercase tracking-[0.5em] text-white/20 mb-12">Architecture Components</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="px-6 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-white/70">.NET Engine</div>
+          <div class="px-6 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-white/70">SQL Server Relational</div>
+          <div class="px-6 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-white/70">Secure Audit Logs</div>
+          <div class="px-6 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-white/70">Multi-Warehouse Support</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+      <p class="text-[10px] text-white/20 uppercase tracking-[4px]">Jorge Borges — Proyecto JTInventory — 2026</p>
+    </footer>
+  </main>
+
+  <style>
+    .glass-card { background: rgba(30,41,59,0.7); backdrop-filter: blur(16px); border:1px solid rgba(255,255,255,0.05); }
+    .text-gradient { background: linear-gradient(135deg,#F59E0B 0%,#D97706 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .feature-icon { width:52px; height:52px; background: rgba(245,158,11,0.1); border-radius:14px; display:flex; align-items:center; justify-content:center; color:#F59E0B; }
+    .inventory-grid { background-image: radial-gradient(rgba(245,158,11,0.1) 1px, transparent 1px); background-size:30px 30px; }
+    .status-pill { padding:2px 10px; border-radius:99px; font-size:10px; font-weight:700; text-transform:uppercase; border:1px solid currentColor; }
+    .scanner-line { height:2px; background:#F59E0B; width:100%; position:absolute; box-shadow:0 0 15px #F59E0B; animation: scan 3s infinite linear; }
+    @keyframes scan { 0%{ transform: translateY(-100%); opacity:0; } 50%{ opacity:0.5; } 100%{ transform: translateY(100%); opacity:0; } }
+    .bg-glow { position:fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at 50% 50%, rgba(245,158,11,0.03) 0%, transparent 60%); pointer-events:none; z-index:-1; }
+  </style>
+
+</MainLayout>
