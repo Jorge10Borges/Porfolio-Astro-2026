@@ -1,0 +1,197 @@
+---
+import MainLayout from "../Layouts/MainLayout.astro";
+---
+
+<MainLayout title="Lumi | Case Study - Jorge Borges" description="Lumi — Plataforma de control de iluminación y gestión energética para espacios comerciales.">
+
+  <div class="bg-glow"></div>
+
+  <main class="pt-48 pb-24 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="flex gap-2 mb-6">
+          <div class="badge-active uppercase tracking-widest">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              E-COMMERCE
+          </div>
+          <span class="tech-badge"> Iluminación & Eficiencia</span>
+        </div>
+
+        <h1 class="text-6xl md:text-6xl font-black mb-6 tracking-tighter text-white">LUMI<span class="text-gradient">TiendaDeAromas</span></h1>
+
+        <p class="text-white/60 text-xl leading-relaxed mb-8">Lumi ya está en producción: una tienda en vivo que muestra diseño, catálogo y experiencia de compra optimizada. Visítala ahora en <a href="https://www.lumitiendadearomas.com/" class="text-sky-400 underline" target="_blank" rel="noopener noreferrer">lumitiendadearomas.com</a> y comprueba la experiencia completa.</p>
+
+        <div class="flex items-center gap-8 mb-8">
+          <div>
+            <p class="text-3xl font-bold text-white">+1,200</p>
+            <p class="text-xs uppercase tracking-widest text-white/40">Luminarias gestionadas</p>
+          </div>
+          <div class="w-px h-10 bg-white/10"></div>
+          <div>
+            <p class="text-3xl font-bold text-white">30%</p>
+            <p class="text-xs uppercase tracking-widest text-white/40">Ahorro energético</p>
+          </div>
+        </div>
+
+        <a href="https://www.lumitiendadearomas.com/" class="inline-flex bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-2xl font-bold transition-all items-center gap-3" target="_blank" rel="noopener noreferrer">
+          Visitar el Sitio
+          <span class="material-symbols-rounded">arrow_right_alt</span>
+        </a>
+      </div>
+
+      <div class="mockup-container">
+        <div class="glass-card p-4 rounded-4xl mockup-img">
+          <div class="bg-[#0B0F1A] rounded-[20px] overflow-hidden aspect-video relative">
+            <img src="/images/projects/lumi.webp" alt="Vista previa Lumi" class="absolute inset-0 w-full h-full object-cover object-center z-0 rounded-4xl" loading="lazy" />
+            <div class="absolute inset-0 bg-linear-to-br from-blue-600/20 to-transparent z-10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resumen Técnico -->
+    <section class="py-24 px-6 bg-white/2">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-10 flex items-center gap-4 text-left">
+          <span class="w-12 h-px bg-yellow-500"></span>
+          E-commerce de Alta Fidelidad
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-white/70 leading-relaxed text-left">
+          <p>
+            Lumi Tienda de Aromas no es solo una tienda online, es una extensión digital de la calidad de sus fragancias. El objetivo principal fue crear una plataforma donde la **estética visual** reflejara la pureza de los productos, permitiendo que el usuario navegue en un entorno de calma y elegancia.
+          </p>
+          <p>
+            Para maximizar la rentabilidad del negocio, implementamos una integración fluida con **Mercado Pago**, permitiendo transacciones seguras y rápidas. La arquitectura se enfoca en el "Quick Checkout" para reducir el abandono de carrito, manteniendo siempre un diseño minimalista que resalta los detalles de cada perfumina y difusor.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Módulos -->
+    <!-- Puntos Clave del Proyecto -->
+    <section class="py-16 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Checkout Optimizado -->
+          <div
+            class="glass-card p-10 rounded-4xl hover:border-emerald-500/40 transition-all text-left"
+          >
+            <div
+              class="feature-icon mb-6 text-yellow-500 h-12 w-12 flex items-center justify-center rounded-xl bg-yellow-500/10"
+            >
+              <span class="material-symbols-rounded">shopping_cart_checkout</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">Checkout Optimizado</h4>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Flujo de compra simplificado para dispositivos móviles, asegurando que la experiencia en Argentina sea rápida y sin fricciones.
+            </p>
+          </div>
+
+          <!-- Integracion con MercadoPago -->
+          <div
+            class="glass-card p-10 rounded-4xl hover:border-emerald-500/40 transition-all text-left"
+          >
+            <div
+              class="feature-icon mb-6 text-yellow-500 h-12 w-12 flex items-center justify-center rounded-xl bg-yellow-500/10"
+            >
+              <span class="material-symbols-rounded">payments</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">Mercado Pago Full</h4>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Sincronización total con la pasarela de pagos líder, gestionando cuotas, promociones bancarias y notificaciones automáticas de acreditación.
+            </p>
+          </div>
+
+          <!-- Gestión de Red -->
+          <div
+            class="glass-card p-10 rounded-4xl hover:border-emerald-500/40 transition-all text-left"
+          >
+            <div
+              class="feature-icon mb-6 text-yellow-500 h-12 w-12 flex items-center justify-center rounded-xl bg-yellow-500/10"
+            >
+              <span class="material-symbols-rounded">high_res</span>
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">Visual Branding</h4>
+            <p class="text-sm text-white/50 leading-relaxed">
+              Carga optimizada de imágenes de alta resolución para mostrar la textura y calidad del packaging sin penalizar el rendimiento del sitio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-24 px-6">
+      <div class="max-w-5xl mx-auto glass-card p-12 rounded-[48px] border-blue-500/20 text-center">
+        <h2 class="text-4xl font-bold mb-6">Visita Lumi — TiendaDeAromas en producción</h2>
+        <p class="text-white/50 mb-10 max-w-2xl mx-auto">Explora la tienda en vivo: catálogo, checkout optimizado y experiencia visual. Haz clic para abrir la tienda y ver la implementación real.</p>
+        <a href="https://www.lumitiendadearomas.com/" class="inline-flex bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold transition-all items-center gap-3" target="_blank" rel="noopener noreferrer">
+          Ver tienda en vivo
+          <span class="material-symbols-rounded">arrow_right_alt</span>
+        </a>
+      </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-white/5 mt-12">
+      <p class="text-[10px] text-white/20 uppercase tracking-[4px]">Lumi — Gestión de Iluminación — 2026</p>
+    </footer>
+  </main>
+
+  <style>
+    .glass-card { background: rgba(22, 27, 34, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+    .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .mockup-container { perspective:1000px; }
+    .mockup-img { transform: rotateX(5deg) rotateY(-10deg) rotateZ(2deg); box-shadow:-20px 20px 50px rgba(0,0,0,0.5); transition:all 0.5s ease; }
+    .mockup-img:hover { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    .bg-glow { position:fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at 50% 50%, rgba(56,189,248,0.03) 0%, transparent 60%); pointer-events:none; z-index:-1; }
+  </style>
+
+<style>
+    .glass-card { background: rgba(22,27,34,0.7); backdrop-filter: blur(12px); border:1px solid rgba(255,255,255,0.08); }
+    .text-gradient { background: linear-gradient(135deg,#3B82F6 0%,#10B981 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .tech-badge { background: rgba(59,130,246,0.1); border:1px solid rgba(59,130,246,0.2); padding:4px 12px; border-radius:99px; font-size:0.75rem; font-weight:600; color:#60A5FA; }
+    .mockup-container { perspective:1000px; }
+    .mockup-img { transform: rotateX(5deg) rotateY(-10deg) rotateZ(2deg); box-shadow:-20px 20px 50px rgba(0,0,0,0.5); transition:all 0.5s ease; }
+    .mockup-img:hover { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    .bg-glow { position:fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at 50% 50%, rgba(59,130,246,0.05) 0%, transparent 70%); pointer-events:none; z-index:-1; }
+    .pulse-green {
+      animation: pulse-green 1.6s ease-in-out infinite;
+      transform-origin: center;
+      will-change: transform, box-shadow, opacity;
+      backface-visibility: hidden;
+    }
+
+    @keyframes pulse-green {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(16,185,129,0.35);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.01);
+        box-shadow: 0 0 0 14px rgba(16,185,129,0.12);
+        opacity: 0.9;
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(16,185,129,0);
+        opacity: 1;
+      }
+    }
+    .badge-active {
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid rgba(16,185,129,0.9);
+      color: #10B981;
+      padding: 6px 12px;
+      border-radius: 99px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 0 0 rgba(16,185,129,0.12);
+      animation: pulse-green 1.6s ease-in-out infinite;
+    }
+  </style>
+
+</MainLayout>
